@@ -1,0 +1,12 @@
+name: GoT-DataViz
+title: GoT-DataViz
+username:
+account: ohraoui
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3567376
+bundleId: 4171857
+url: https://ohraoui.shinyapps.io/GoT-DataViz/
+when: 1612284949.74659
+asMultiple: FALSE
+asStatic: FALSE

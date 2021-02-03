@@ -1,0 +1,58 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+```
+
+```{r}
+characters = read_csv("characters.csv")
+episodes = read_csv("episodes.csv")
+scenes = read_csv("scenes.csv")
+appearances = read_csv("appearances.csv")
+```
+
+```{r}
+dim(appearances)
+```
+
+```{r}
+appearances_cols = names(appearances)
+appearances_cols[appearances_cols %in% names(scenes)]
+```
+
+```{r}
+str(characters)
+summary(characters)
+str(appearances)
+summary(appearances)
+str(episodes)
+summary(episodes)
+str(scenes)
+summary(scenes)
+```
+
+```{r}
+sum(scenes$nbdeath)
+sum(scenes$nbdeath[scenes$episodeId<=10])
+```
+
+```{r}
+sort(table(characters$killedBy), decreasing = TRUE)[1:5]
+```
+
+```{r}
+scenes[which.max(scenes$duration),]
+```
+
+
+
+
+
+
+
+
+
+
